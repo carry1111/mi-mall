@@ -1,0 +1,6 @@
+<!--pages/register/index.wxml-->
+<form bindsubmit="formSubmit">
+  <text>用户名：</text><input class="input" type="text" value="123" name="username"></input>
+  <text>密码：</text><input class="input" type="password" value="123456" name="password"></input>
+  <button form-type='submit'>注册</button>
+</form>

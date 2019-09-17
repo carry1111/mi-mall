@@ -1,0 +1,58 @@
+.container{
+  display: flex;
+}
+.left{
+  width: 210rpx;
+  height: 1100rpx;
+}
+.nav-item{
+  width: 210upx;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.selected{
+  color: #fb7d34;
+  font-size: 40rpx;
+}
+.right{
+  flex: 1;
+  height: 1100rpx;
+}
+.title{
+  height: 70rpx;
+  line-height: 70rpx;
+  margin: 20rpx 0;
+  text-align: center;
+  position: relative;
+  font-size: 28upx;
+}
+.title::before,
+.title::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30rpx;
+  height: 2rpx;
+  background-color: rgba(0,0,0,.3);
+}
+.title::before{
+  left: 30%;
+}
+.title::after{
+  right: 30%;
+}
+.item{
+  display: inline-block;
+  width: 33%;
+}
+.image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.name{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

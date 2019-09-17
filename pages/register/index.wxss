@@ -1,0 +1,5 @@
+/* pages/register/index.wxss */
+.input{
+  border: 1rpx solid #ccc;
+  padding: 10rpx;
+}

@@ -1,0 +1,32 @@
+<view class="list" >
+  <view class="item" wx:for="{{shopCartList}}" wx:key="index">
+    <view class="radio {{checkeds[index] ? 'checked' : 'unchecked'}}" data-index="{{index}}" bindtap="change"></view>
+    <image class="img" src="{{item.imageUrl[0]}}"></image>
+    <view class="info">
+      <view class="name">{{item.name}}</view>
+      <view class="price">售价：{{item.price}}元</view>
+      <view class="num">
+        <view class="main">
+          <view class="box">
+            <view class="btn" data-index="{{index}}" bindtap="reduceNum">-</view>
+            <view class="number">{{item.num}}</view>
+            <view class="btn" data-index="{{index}}" bindtap="addNum">+</view>
+          </view>
+        </view>
+        <view class="del" data-index="{{index}}" bindtap="delProduct"></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="footer">
+  <view class="left">
+    <view>共{{totalNum}}件</view>
+    <view> <text class="num">金额:  {{totalPrice}} 元 </text> </view>
+  </view>
+  <view class="center" bindtap="toHome">
+    继续购物
+  </view>
+  <view class="right" bindtap="toCheckout">
+    去结算
+  </view>
+</view>

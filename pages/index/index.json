@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "recommend": "../../components/index/recommend/index",
+    "phone": "../../components/index/phone/index"
+  }
+}

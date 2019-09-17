@@ -1,0 +1,61 @@
+<!--pages/my/index.wxml-->
+<view class="content">
+  <view wx:if="isLogin">
+    <view class="page">
+      <view class="page__bd">
+          <view class="weui-cells weui-cells_after-title">
+              <navigator url="../userInfo/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__bd">个人信息</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </navigator>
+          </view>
+      </view>
+    </view>
+    <view class="page">
+      <view class="page__bd">
+          <view class="weui-cells weui-cells_after-title">
+              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__bd">支付</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </navigator>
+          </view>
+      </view>
+    </view>
+    <view class="page">
+      <view class="page__bd">
+          <view class="weui-cells weui-cells_after-title">
+              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__bd">收藏</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </navigator>
+              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__bd">相册</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </navigator>
+              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__bd">卡包</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </navigator>
+              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__bd">表情</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </navigator>
+          </view>
+      </view>
+    </view>
+    <view class="page">
+      <view class="page__bd">
+          <view class="weui-cells weui-cells_after-title">
+              <navigator url="../setup/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__bd">设置</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </navigator>
+          </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <button bindtap="toRegister">注册</button>
+    <button bindtap="toLogin">登录</button>
+  </view>
+</view>

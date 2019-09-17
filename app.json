@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/game/index",
+    "pages/classify/index",
+    "pages/shopcart/index",
+    "pages/my/index",
+    "pages/register/index",
+    "pages/login/index",
+    "pages/setup/index",
+    "pages/userInfo/index",
+    "pages/detail/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ff6700",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home-off.png",
+        "selectedIconPath": "static/images/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/index",
+        "iconPath": "static/images/order-off.png",
+        "selectedIconPath": "static/images/order-on.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/shopcart/index",
+        "iconPath": "static/images/cart-off.png",
+        "selectedIconPath": "static/images/cart-on.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/images/my-off.png",
+        "selectedIconPath": "static/images/my-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

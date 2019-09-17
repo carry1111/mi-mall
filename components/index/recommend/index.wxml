@@ -1,0 +1,87 @@
+<swiper class="swiper" indicator-dots="true" indicator-active-color="rgb(255,255,255)"
+duration="{{duration}}">
+  <swiper-item>
+    <image class="image" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d29d52bba5fd11a39f01c488a4f759a8.jpg?thumb=1&w=720&h=360"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="image" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/2943541eab405370f25a8c46ffcbe5ae.jpg?thumb=1&w=720&h=360"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="image" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/108e5ff796b990e16fb1d9179fc9637a.jpg?thumb=1&w=720&h=360"></image>
+  </swiper-item>
+</swiper>
+<view class="nav">
+  <view class="nav-item" wx:for="{{navImgSrc}}" wx:key="index">
+    <image class="nav-image" src="{{item}}"></image>
+  </view>
+</view>
+<view class="divider_line" index="3" style="height: 16rpx; border-bottom: 10rpx solid rgb(245, 245, 245); background-color: rgb(245, 245, 245);"></view>
+<view class="cell">
+  <view class="cell-left">
+    <image class="cell-left-image" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/c33053c2d6f56bb6f2fe70bcb0786e3c.jpg?thumb=1&w=358&h=508"></image>
+  </view>
+  <view class="cell-right">
+    <image class="cell-right-image1" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/4aea81c738383c9787b49c3d5e6a7ab0.jpg?thumb=1&w=358&h=252"></image>
+    <image class="cell-right-image2"  src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b828c82fb078b9282aa817f01da0621.jpg?thumb=1&w=358&h=252"></image>
+  </view>
+</view>
+<view class="divider_line" index="3" style="height: 0rpx; border-bottom: 5rpx solid rgb(255, 255, 255); background-color: rgb(255, 255, 255);"></view>
+<view class="cell2">
+  <view class="cell2-left">
+    <image class="cell2-image" src="//i8.mifile.cn/v1/a1/139eeb1a-95ac-d278-4b1e-e2fb05798908.webp"></image>
+  </view>
+  <view class="cell2-right">
+    <image class="cell2-image" src="//i8.mifile.cn/v1/a1/1074a94c-0594-5ddd-7e53-2667d27e8e36.webp"></image>
+  </view>
+</view>
+<view class="divider_line" style="height: 20rpx; border-bottom: 10rpx solid rgb(245, 245, 245); background-color: rgb(245, 245, 245);"></view>
+<view class="banner1">
+  <image class="banner1-image" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6c71c1c81edf64e2c13c137c2820805.jpg?thumb=1&w=720&h=280"></image>
+</view>
+<view class="divider_line" style="height: 16rpx; border-bottom: 0.16rpx solid rgb(245, 245, 245); background-color: rgb(245, 245, 245);"></view>
+<view class="banner2">
+  <image class="banner2-image" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/93646c36119c9e1f18263eb888c7ca22.jpg?thumb=1&w=720&h=440"></image>
+</view>
+<view class="container">
+  <view class="item" wx:for="{{phone['goodsList']}}" wx:key="{{index}}" data-typeid="{{phone.typeId}}" data-goodsid="{{item.goodsId}}" bindtap="toDetail">
+    <view>
+      <image class="big" src="{{item.imageUrl[0]}}"></image>
+    </view>
+    <view class="information">
+      <view class="name">{{item.name}}</view>
+      <view class="text">{{item.info}}</view>
+      <view class="price symbol">
+        {{item.price}}
+        <span class="old symbol">2699</span>
+      </view>
+      <view class="button">立即购买</view>
+    </view>
+  </view>
+</view>
+<view class="container-foot">
+  更多小米手机产品 >
+</view>
+<view class="divider_line" style="height: 16rpx; border-bottom: 0.16rpx solid rgb(245, 245, 245); background-color: rgb(245, 245, 245);"></view>
+<view class="links">
+  <view>
+    <image class="image" src="//i8.mifile.cn/v1/a1/46c44f3e-479d-a999-dd2d-98fb39b51e17.webp"></image>
+    <image class="image" src="//i8.mifile.cn/v1/a1/b79cb907-3ae4-2a35-6756-b243b386a95a.webp"></image>
+  </view>
+  <view>
+    <image class="image" src="//i8.mifile.cn/v1/a1/b883172b-5aa3-7855-678f-c615109ee0a7.webp"></image>
+    <image class="image" src="//i8.mifile.cn/v1/a1/8cfcd654-4af5-9ae6-c6cc-1ba9d28be8e8.webp"></image>
+  </view>
+  <view>
+    <image class="image" src="//i8.mifile.cn/v1/a1/52866372-7fe5-76c2-29a0-9ae32d07b8ff.webp"></image>
+    <image class="image" src="//i8.mifile.cn/v1/a1/ad91499a-59ab-adc3-8fd5-98aefc1c43b4.webp"></image>
+  </view>
+</view>
+<view class="divider_line" style="height: 16rpx; border-bottom: 0.16rpx solid rgb(245, 245, 245); background-color: rgb(245, 245, 245);"></view>
+<view class="foot-banner">
+  <image class="image" src="//i8.mifile.cn/v1/a1/fc12f9b1-5f50-642d-d5ca-041bb28bf096.webp"></image>
+</view>
+<view class="divider_line" style="height: 16rpx; border-bottom: 0.16rpx solid rgb(245, 245, 245); background-color: rgb(245, 245, 245);"></view>
+<view class="foot-text">
+  了解小米
+</view>
+<view class="divider_line" style="height: 16rpx; border-bottom: 0.16rpx solid rgb(245, 245, 245); background-color: rgb(245, 245, 245);"></view>

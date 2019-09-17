@@ -1,0 +1,17 @@
+/* pages/my/index.wxss */
+.content{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f0f0f0;
+}
+.page{
+  margin-top: 30rpx;
+}
+.top{
+  height: 150rpx;
+  padding: 10rpx;
+  background-color: #fff;
+}

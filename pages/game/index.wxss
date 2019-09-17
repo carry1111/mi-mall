@@ -1,0 +1,25 @@
+.result{
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom:1rpx solid #ccc;
+  padding: 10rpx;
+}
+.jiange{
+  margin-top: 30rpx;
+}
+.text{
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.content{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.num{
+  flex: 1;
+  width: 30%;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  font-size: 40rpx;
+}

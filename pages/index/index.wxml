@@ -1,0 +1,29 @@
+<view class="top">
+  <view class="header">
+    <view class="icon"></view>
+    <view class="search">
+      <span class="search-icon"></span>
+      搜索商品名称
+    </view>
+    <view class="user" bindtap="toUser"></view>
+  </view>
+  <scroll-view scroll-x class="scroll-view" enable-flex>
+    <view 
+    class="scroll-view-item" 
+    wx:for="{{tabList}}" 
+    wx:key="index" 
+    bindtap='select'
+    data-index="{{index}}">
+      <span class="name {{currentIndex === index ? 'selected' : ''}}">{{item.name}}</span>
+    </view>
+  </scroll-view>
+</view>
+<view class="interval"></view>
+<recommend wx:if="{{currentIndex === 0}}"></recommend>
+<phone wx:elif="{{currentIndex === 1}}"></phone>
+<phone wx:elif="{{currentIndex === 2}}"></phone>
+<phone wx:elif="{{currentIndex === 3}}"></phone>
+<phone wx:elif="{{currentIndex === 4}}"></phone>
+<phone wx:elif="{{currentIndex === 5}}"></phone>
+<phone wx:elif="{{currentIndex === 6}}"></phone>
+<!-- </view> -->

@@ -1,0 +1,33 @@
+<view class="container">
+  <scroll-view class="left" scroll-y scroll-into-view="{{scrollId}}">
+    <view 
+    class="nav-item {{currentCategoryIndex === index ? 'selected' : ''}}" 
+    wx:for="{{categoryList}}" 
+    wx:key="{{index}}" 
+    data-index="{{index}}" 
+    bindtap="clickHandle">
+      {{item}}
+    </view>
+  </scroll-view>
+  <scroll-view 
+  class="right" 
+  scroll-y 
+  scroll-into-view="{{scrollId}}"
+  data-index="{{index}}"
+  bindscroll="scrollHandle">
+    <view 
+    class="list" 
+    wx:for="{{product}}" 
+    wx:key="index" 
+    wx:for-item="i" 
+    id="{{categoryId[index]}}">
+      <view wx:for="{{i.subcategory}}" wx:key="index" wx:for-item="val">
+        <view class="title">{{val.typeName}}</view>
+        <view class="item" wx:for="{{val.productList}}" wx:key="index">
+          <image class="image" src="{{item.imgSrc}}"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

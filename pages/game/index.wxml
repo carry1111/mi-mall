@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view>倒计时：{{time}} 秒</view>
+  <view class="result">开: {{result}}</view>
+  <view class="result">结果：{{resultInfo}}</view>
+  <view class="result jiange">投注号码：{{guessNum}}</view>
+  <view class="result">投注金额：{{bettingMoney}}</view>
+  
+  <view class="content">
+    <text class="text">投注金额：</text>
+    <button class="num" data-num='{{10}}' bindtap='betting'>10</button>
+    <button class="num" data-num='{{20}}' bindtap='betting'>20</button>
+    <button class="num" data-num='{{30}}' bindtap='betting'>30</button>
+    <button class="num" data-num='{{40}}' bindtap='betting'>40</button>
+  </view>
+  <view class="content">
+    <button class="num" data-num='{{1}}' bindtap='choose'>1</button>
+    <button class="num" data-num='{{2}}' bindtap='choose'>2</button>
+    <button class="num" data-num='{{3}}' bindtap='choose'>3</button>
+    <button class="num" data-num='{{4}}' bindtap='choose'>4</button>
+    <button class="num" data-num='{{5}}' bindtap='choose'>5</button>
+    <button class="num" data-num='{{6}}' bindtap='choose'>6</button>
+  </view>
+  <!-- <view class="content">
+    <button class="num">大</button>
+    <button class="num">小</button>
+  </view> -->
+  <button>确认</button>
+  <view>我的钱：{{money}}</view>
+</view>

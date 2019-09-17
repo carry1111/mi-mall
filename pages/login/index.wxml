@@ -1,0 +1,20 @@
+<!--pages/login/index.wxml-->
+<form class="weui-cells weui-cells_after-title" bindsubmit='formSubmit'>
+  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+          <view class="weui-label">用户名</view>
+      </view>
+      <view class="weui-cell__bd">
+          <input class="weui-input" name="username" placeholder="请输入用户名"/>
+      </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+          <view class="weui-label">密码</view>
+      </view>
+      <view class="weui-cell__bd">
+          <input class="weui-input" type="password" name="password" placeholder="请输入密码"/>
+      </view>
+  </view>
+  <button form-type='submit'>登录</button>
+</form>
